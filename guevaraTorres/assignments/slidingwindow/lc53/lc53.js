@@ -16,16 +16,16 @@ edge cases: null or 0
 function max_subarray_size_k(k, arr) {
   // TODO: Write your code here
 
-  let maxSum = 0;
-  let windowStart = 0;
-  let current = 0;
+  let maxSum = 0;         //Used to determine the maximum between maxSum and current 
+  let windowStart = 0;    //Where the window within the array starts
+  let current = 0;        //The Sum ranged from windowStart to windowEnd
 
-  if(arr.length == 0 || k > arr.length || k < 1) return 0;
+  if(arr.length == 0 || k > arr.length || k < 1) return 0; //if k or the array are too small
 
-  for(let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-    current += arr[windowEnd];              //add windowEnd index value to current
+  for(let windowEnd = 0; windowEnd < arr.length; windowEnd++) {     //moves the window through the array
+    current += arr[windowEnd];              //adds windowEnd index value to current
 
-    if(windowEnd >= k-1) {                  //check to see if the window is the proper size
+    if(windowEnd >= k-1) {                  //if the window is not the proper size, it goes back to increase the size of window and current
     maxSum = Math.max(maxSum, current);     //find max sum of maxSum and current
     current -= arr[windowStart];            //remove windowStart index value from current
     windowStart++;                          //increment windowStart
