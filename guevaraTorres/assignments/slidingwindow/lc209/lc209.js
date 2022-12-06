@@ -15,19 +15,19 @@ edge cases: null or 0 for sum and/or array
 function smallest_subarray_with_given_sum(s, arr) {
   // TODO: Write code here
 
-  let minLength = arr.length;
-  let sumLength = 0;
-  let windowStart = 0;
-  let current = 0;
-  let reached = false;
+  let minLength = arr.length;                                     //minLength starts at arr.length
+  let sumLength = 0;                                              //the curernt length that will satisfy the subarray requirements    
+  let windowStart = 0;                                            //where the window starts
+  let current = 0;                                                //the current sum
+  let reached = false;                                            //flag -- found the desired subarray length yet?
 
-  if (arr.length == 0 || s == 0) return 0;                         //if the array length or s is null or 0, return 0
+  if (arr.length == 0 || s == 0) return 0;                        //if the array length or s is null or 0, return 0
 
   for (windowEnd = 0; windowEnd < arr.length; windowEnd++) {
     current += arr[windowEnd];                                    //add windowEnd index value to current
-    if (current <= s) sumLength++;                                 //if the current sum is less than or equal to the target sum, increment sumLength
-    if (current > s - 1) {                                           //check to see if the window is close to the proper sum
-      if (current == s) reached = true;                            //if the current sum reaches the target sum reached becomes true
+    if (current <= s) sumLength++;                                //if the current sum is less than or equal to the target sum, increment sumLength
+    if (current > s - 1) {                                        //check to see if the window is close to the proper sum
+      if (current == s) reached = true;                           //if the current sum reaches the target sum reached becomes true
       minLength = Math.min(minLength, sumLength);                 //if the current sum length is less than the current min length, change minLength to the sumLength
       current -= arr[windowStart];                                //remove windowStart index value from current
       windowStart++;                                              //increment windowStart

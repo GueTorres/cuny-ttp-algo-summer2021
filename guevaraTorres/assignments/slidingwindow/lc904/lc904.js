@@ -22,20 +22,20 @@ function fruits_into_baskets(fruits) {
 
   //try to extend the  [ windowStart, windowEnd]
   for (let windowEnd = 0; windowEnd < fruits.length; windowEnd++) {
-    const rightFruit = fruits[windowEnd];    //the fruit at the end of the window
+    const rightFruit = fruits[windowEnd];     //the fruit at the end of the window
 
-    if (!(rightFruit in fruitFrequency)) {   //if the fruit is not previously recorded
-      fruitFrequency[rightFruit] = 0;        //record fruit type
+    if (!(rightFruit in fruitFrequency)) {    //if the fruit is not previously recorded
+      fruitFrequency[rightFruit] = 0;         //record fruit type
     }
     
-    fruitFrequency[rightFruit] ++;           //record fruit type occurence
+    fruitFrequency[rightFruit] ++;            //record fruit type occurence
 
-    //shrink the sliding window until there only 2 fruit types in the fruit frequency dictionary
+                                              //shrink the sliding window until there only 2 fruit types in the fruit frequency dictionary
     while(Object.keys(fruitFrequency).length > 2) {
 
-      const leftFruit = fruits[windowStart]; //fruit at the start of the window
+      const leftFruit = fruits[windowStart];  //fruit at the start of the window
       fruitFrequency[leftFruit]--;     
-            //decrement fruit occurence
+                                              //decrement fruit occurence
       if(fruitFrequency[leftFruit] === 0 ) {  //check if any occurences of starting fruit in frequency dictionary
         delete fruitFrequency[leftFruit];     //if not, remove fruit type
       }
