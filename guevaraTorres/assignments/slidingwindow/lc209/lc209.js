@@ -34,7 +34,7 @@ function smallest_subarray_with_given_sum(s, arr) {
     }
   }
 
-  if (current < s && !reached) return 0;                           //if the target sum is never reached, return 0
+  if (current < s && !reached) return 0;                          //if the target sum is never reached, return 0
 
   return (minLength);
 
