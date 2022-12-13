@@ -15,57 +15,43 @@
     edge cases: null or 0 for sum and/or array
  */
     var lengthOfLongestSubstring = function(s) {
-        let maxLength = 0;                       //maxLength starts at 0 to represent the lack of a non-repeating subarray
-        let windowStart = 0;                     //the sliding window needs to start at the s string's first index
-        let characterFrequency = {};             //will record character frequency in order to determine non-repeating characters
-        let current = {};              //the current substring should be empty 
-        let temp = {};                 //the temp substring should be empty
 
-        if(s.length == 0 || s == String.Empty || s == null) return -1;      //if s string is empty or null, it will fail
+      let chars = new Set();          //map of substring
+      let windowStart = 0;            //start of window
+      let maxLength = 0;              //maxLength has yet to be assessed
 
-        for(let windowEnd = 0; windowEnd < s.length; windowEnd++){  //the sliding window increments, starting from s[0]
-            const rightCharacter = s[windowEnd];          //character at the start of the String
+      if (s.length === 0 || s.length === null) return 0; //edge case
+      if (s.length === 1) return 1;                      //edge case
 
-            if(!(rightCharacter in characterFrequency)) {   //checks to see if character has occured
-                characterFrequency[rightCharacter] = 1;     //add the character if it hasn't 
-            }
-            //shrink the sliding window until there are only 2 character types in the frequency dictionary
-            while(Object.keys(characterFrequency)) {
-                const leftCharacter = s[windowStart]; //character at the start of the window
+      for (let windowEnd = 0; windowEnd < s.length; windowEnd++) {    //the sliding window increments, starting from s[0]
 
-                characterFrequency[leftCharacter]--; //decrement character occurence
-
-                if(characterFrequency[leftCharacter] === 0 ) { //check if any occurences of the starting character in the frequency dictionary
-                delete characterFrequency[leftCharacter];  //if not, remove character type
-                }
-
-                windowStart++;      //move window up
-            }
-
-            maxLength = Math.max(maxLength, windowEnd - windowStart + 1);   //determine max length
-            
+        while (chars.has(s[windowEnd])) {     //check if any occurences of the current character
+            chars.delete(s[windowStart])      //if so, delete
+            windowStart++;                    //move window up
         }
-        let substring = Array.from(current)
-        return substring;                                   //return the largest subarray
+        chars.add(s[windowEnd]);              //adds current char to window
+        maxLength = Math.max(maxLength, windowEnd - windowStart + 1)    //determine max length
+      }
+      return maxLength;                       //sends maxLength
     };
 
     console.log(
-        `Maximum sum of a subarray of size K: ${lengthOfLongestSubstring(
+        `Maximum length of a non-repeating subarray: ${lengthOfLongestSubstring(
             "abcabcbb"
         )}`
       );
       console.log(
-        `Maximum sum of a subarray of size K: ${lengthOfLongestSubstring(
+        `Maximum length of a non-repeating subarray: ${lengthOfLongestSubstring(
             "bbbbb"
         )}`
       );
       console.log(
-        `Maximum sum of a subarray of size K: ${lengthOfLongestSubstring(
+        `Maximum length of a non-repeating subarray: ${lengthOfLongestSubstring(
             "pwwkew"
         )}`
       );
       console.log(
-        `Maximum sum of a subarray of size K: ${lengthOfLongestSubstring(
+        `Maximum length of a non-repeating subarray: ${lengthOfLongestSubstring(
           ""
         )}`
       );
