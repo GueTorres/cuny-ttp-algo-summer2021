@@ -11,7 +11,7 @@
 /*
 Start a loop to reach position p. Once position p is reach, we need to keep track of the previous node in order to connect the sub list after it is reversed.
 As well as the current node, since it will be reversed into the last node in the sub list, allowing for a connection if position q is not the last node. 
-Switching the values, starting from head so that instead of pointing to the next node, it points to null.
+Switching the values, starting from head, so that instead of pointing to the next node, it points to null.
 I would need to hold reference to the next node, so it can becomes the new head.
 Re-assigning the .next.
 
@@ -46,29 +46,29 @@ const reverse_sub_list = function (head, p, q) {
 
   if(p === q) return head;
 
-  for(; i < p - 1; i++) {
-    previous = current;
-    current = current.next;
+  for(; i < p - 1; i++) {    //loop that gets to position p 
+    previous = current;      //previous becomes current
+    current = current.next;  //current moves to the right
   }
 
-  const node_before_sub_list = previous;
-  const last_node_of_sub_list = current;
-  let next = null;
+  const node_before_sub_list = previous;    //keeps track of previous so we know where to connect the sublist after it's been reversed
+  const last_node_of_sub_list = current;    //keeps track of current allowing for a connection if position q is not the last node after it's been reversed.
+  let next = null;                          //next starts at null and will represent the incrementing reversal of current
 
-  i = 0;
-  while(head && i < q - p + 1) {
-    next = current.next;
-    current.next = previous;
-    previous = current;
-    current = next;
-    i++;
+  i = 0;                                    //allows the while loop to reverse the linked list without exceeding the suggested p to q range
+  while(head && i < q - p + 1) {            //makes sure head isn't within the range
+    next = current.next;                    //turns next into current.next
+    current.next = previous;                //current.next goes left
+    previous = current;                     //previous goes right
+    current = next;                         //current goes left
+    i++;                                    //increments i
   }
 
-  if(node_before_sub_list !== null){
-    node_before_sub_list.next = previous;
-  }else{head = previous;}
+  if(node_before_sub_list !== null){        //if node_before_sub_list is null, that means q is the start of the linked list 
+    node_before_sub_list.next = previous;   //if not, then adjust node_before_sub_list to point towards previous
+  }else{head = previous;}                   //since q is the start of the playlist, need to point head at previous, which points to null
 
-  last_node_of_sub_list.next = current;
+  last_node_of_sub_list.next = current;     //current have changed at this point 
   return head;
   // let previous = null;
   // let current = head;
