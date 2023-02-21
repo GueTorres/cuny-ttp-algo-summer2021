@@ -41,26 +41,14 @@ class Node {
 const reverse = function(head) {
   // TODO: Write your code here
 
-  // let previous = null;
-  // let next = null;
-
-  // while(head !== null){
-  //   next = head.next;
-  //   head.next = previous;
-  //   previous = head;
-  //   head = next;
-  // }
-
-  // return previous;
-
   let previous = null;
   let next = null;
 
-  while(head !== null) {
-    next = head.next;
-    head.next = previous;
-    previous = head;
-    head = next;
+  while(head !== null) {    //
+    next = head.next;       //next = 4         | next = 6       | next = 8        | next = 10       | next = null
+    head.next = previous;   //head.next = null | head.next = 2  | head.next = 4   | head.next = 6   | head.next = 8
+    previous = head;        //previous = 2     | previous = 4   | previous = 6    | previous = 8    | previous = 10
+    head = next;            //head = 4         | head = 6       | head = 8        | head = 10       | head = null
   }
 
   return previous;
