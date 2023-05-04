@@ -29,7 +29,6 @@ function find2nd(btn: BinaryTreeNode, parent: BinaryTreeNode): number{
 
     if(btn.left && !btn.right) return btn.left.value; //if there is a left and no right, return btn.left
     if(btn.right) return find2nd(btn.right, btn);    //if right E tf recurse
-    if(btn.left && btn.right) return find2nd(btn.right, btn);    //complete => recurse
     if(!btn.left && !btn.right) {
         return parent.value;
     }
