@@ -16,35 +16,41 @@
 function fruits_into_baskets(fruits) {
   // TODO: Write code here
   
-  let windowStart = 0,
-  maxLength = 0,
-  fruitFrequency = {};
+  
 
-  //try to extend the  [ windowStart, windowEnd]
-  for (let windowEnd = 0; windowEnd < fruits.length; windowEnd++) {
-    const rightFruit = fruits[windowEnd];     //the fruit at the end of the window
 
-    if (!(rightFruit in fruitFrequency)) {    //if the fruit is not previously recorded
-      fruitFrequency[rightFruit] = 0;         //record fruit type
-    }
+
+
+
+  // let windowStart = 0,
+  // maxLength = 0,
+  // fruitFrequency = {};
+
+  // //try to extend the  [ windowStart, windowEnd]
+  // for (let windowEnd = 0; windowEnd < fruits.length; windowEnd++) {
+  //   const rightFruit = fruits[windowEnd];     //the fruit at the end of the window
+
+  //   if (!(rightFruit in fruitFrequency)) {    //if the fruit is not previously recorded
+  //     fruitFrequency[rightFruit] = 0;         //record fruit type
+  //   }
     
-    fruitFrequency[rightFruit] ++;            //record fruit type occurence
+  //   fruitFrequency[rightFruit] ++;            //record fruit type occurence
 
-                                              //shrink the sliding window until there only 2 fruit types in the fruit frequency dictionary
-    while(Object.keys(fruitFrequency).length > 2) {
+  //                                             //shrink the sliding window until there only 2 fruit types in the fruit frequency dictionary
+  //   while(Object.keys(fruitFrequency).length > 2) {
 
-      const leftFruit = fruits[windowStart];  //fruit at the start of the window
-      fruitFrequency[leftFruit]--;     
-                                              //decrement fruit occurence
-      if(fruitFrequency[leftFruit] === 0 ) {  //check if any occurences of starting fruit in frequency dictionary
-        delete fruitFrequency[leftFruit];     //if not, remove fruit type
-      }
+  //     const leftFruit = fruits[windowStart];  //fruit at the start of the window
+  //     fruitFrequency[leftFruit]--;     
+  //                                             //decrement fruit occurence
+  //     if(fruitFrequency[leftFruit] === 0 ) {  //check if any occurences of starting fruit in frequency dictionary
+  //       delete fruitFrequency[leftFruit];     //if not, remove fruit type
+  //     }
 
-      windowStart++;                          //move window up
-    }
-    maxLength = Math.max(maxLength, windowEnd - windowStart + 1); //determine max length
-  }
-  return maxLength;
+  //     windowStart++;                          //move window up
+  //   }
+  //   maxLength = Math.max(maxLength, windowEnd - windowStart + 1); //determine max length
+  // }
+  // return maxLength;
 }
   // let windowStart = 0,
 // maxLength = 0,
