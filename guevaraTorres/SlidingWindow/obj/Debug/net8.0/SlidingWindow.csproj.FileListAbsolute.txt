@@ -1,0 +1,15 @@
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.AssemblyInfoInputs.cache
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.AssemblyInfo.cs
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.csproj.CoreCompileInputs.cache
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.sourcelink.json
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\bin\Debug\net8.0\SlidingWindow.exe
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\bin\Debug\net8.0\SlidingWindow.deps.json
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\bin\Debug\net8.0\SlidingWindow.runtimeconfig.json
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\bin\Debug\net8.0\SlidingWindow.dll
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\bin\Debug\net8.0\SlidingWindow.pdb
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.dll
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\refint\SlidingWindow.dll
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.pdb
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\SlidingWindow.genruntimeconfig.cache
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\SlidingWindow\obj\Debug\net8.0\ref\SlidingWindow.dll

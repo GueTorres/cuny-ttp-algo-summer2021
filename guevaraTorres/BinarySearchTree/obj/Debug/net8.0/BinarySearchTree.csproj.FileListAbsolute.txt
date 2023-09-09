@@ -1,0 +1,15 @@
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.AssemblyInfoInputs.cache
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.AssemblyInfo.cs
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.csproj.CoreCompileInputs.cache
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.sourcelink.json
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\bin\Debug\net8.0\BinarySearchTree.exe
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\bin\Debug\net8.0\BinarySearchTree.deps.json
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\bin\Debug\net8.0\BinarySearchTree.runtimeconfig.json
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\bin\Debug\net8.0\BinarySearchTree.dll
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\bin\Debug\net8.0\BinarySearchTree.pdb
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.dll
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\refint\BinarySearchTree.dll
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.pdb
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\BinarySearchTree.genruntimeconfig.cache
+C:\Users\Hg\cuny-ttp-algo-summer2021-1\guevaraTorres\BinarySearchTree\obj\Debug\net8.0\ref\BinarySearchTree.dll
